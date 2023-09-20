@@ -175,7 +175,7 @@ typedef struct AVCodecParameters {
     /**
      * Audio only. The number of audio samples per second.
      */
-    int      sample_rate;
+    int64_t      sample_rate;
     /**
      * Audio only. The number of bytes per coded audio frame, required by some
      * formats.

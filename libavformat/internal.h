@@ -584,7 +584,7 @@ const struct AVCodec *ff_find_decoder(AVFormatContext *s, const AVStream *st,
  * @param pts_den time base denominator
  */
 void avpriv_set_pts_info(AVStream *st, int pts_wrap_bits,
-                         unsigned int pts_num, unsigned int pts_den);
+                         unsigned int pts_num, uint64_t pts_den);
 
 /**
  * Set the timebase for each stream from the corresponding codec timebase and
